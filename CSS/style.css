@@ -31,7 +31,7 @@
 
 .dark-theme {
   --navBg:          var(--black);
-  --navLinkHoverBg: var(--white);
+  --navLinkHoverBg: var(--blueGray);
   --mainBg:         var(--blueGray);
   --fontColor:      var(--white);
   --navLinkColor:   var(--lightCoral);
@@ -196,4 +196,32 @@ input[type=text]:focus {
 .contact button {
  background: var(--darkGreen);
  color: var(--white);
+}
+
+@media screen and (max-width: 600px) {
+  .myForm {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin: 10px;
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .message > textarea {
+    display: flex;
+    flex: 1; 
+    min-width: 45rem;
+    min-height: 20rem;
+    font-size: 1.8rem;
+    flex-wrap: wrap;
+  }
+
+  h1, h2 {
+    font-size: 4rem;
+  }
 }
