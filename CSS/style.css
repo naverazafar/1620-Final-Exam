@@ -29,6 +29,7 @@
   --formInput:      var(--white);
 }
 
+/* dark mode */
 .dark-theme {
   --navBg:          var(--black);
   --navLinkHoverBg: var(--blueGray);
@@ -198,6 +199,8 @@ input[type=text]:focus {
  color: var(--white);
 }
 
+
+/* media query that takes effect when viewport is 600px or less */
 @media screen and (max-width: 600px) {
   .myForm {
     display: flex;
